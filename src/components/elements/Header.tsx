@@ -15,7 +15,7 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex gap-x-5 text-sm">
-                    <Link href="/public">Home</Link>
+                    <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
                     <Link href="/services">Services</Link>
                     <Link href="/contact">Contact Us</Link>
@@ -34,7 +34,7 @@ export default function Header() {
             {/* Mobile Menu */}
             {isOpen && (
                 <nav className="flex flex-col gap-3 mt-4 md:hidden text-center">
-                    <Link href="/public" onClick={() => setIsOpen(false)}>Home</Link>
+                    <Link href="/" onClick={() => setIsOpen(false)}>Home</Link>
                     <Link href="/about" onClick={() => setIsOpen(false)}>About</Link>
                     <Link href="/services" onClick={() => setIsOpen(false)}>Services</Link>
                     <Link href="/contact" onClick={() => setIsOpen(false)}>Contact Us</Link>

@@ -17,7 +17,7 @@ export default function Footer() {
                 <Instagram />
             </div>
             <nav className={"flex justify-center max-sm:flex-col col-start-2 text-sm gap-y-5 items-center gap-x-5 w-full"}>
-                <Link href={"/public"}>Home</Link>
+                <Link href={"/"}>Home</Link>
                 <Link href={"/about"}>About</Link>
                 <Link href={"/services"}>Services</Link>
                 <Link href={"/contact"}>Contact Us</Link>

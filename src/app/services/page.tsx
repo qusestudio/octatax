@@ -7,67 +7,40 @@ import Image from "next/image";
 export default function Services() {
     const services = [
         {
-            title: "Monthly Accounting",
+            title: "Financial Accounting",
             image: "tax_r.png",
-            description:
-                "Streamlined monthly accounting services for individuals and businesses, covering bookkeeping, reconciliations, and financial reporting, so you stay organized, compliant, and always ready for tax season.",
+            items: ["Annual Financial Statements","Monthly Accounting"],
             accent: "bg-[#2563EB]", // blue
         },
         {
-            title: "Tax Registration",
+            title: "Accounting Officer Reports",
             image: "tax_r.png",
-            description:
-                "Comprehensive SARS registration services for individuals and businesses, including VAT, PAYE, and all related tax accounts, ensuring full compliance from the outset.",
+            items: ["Audits","Independent Reviews"],
             accent: "bg-[#2563EB]", // blue
         },
         {
-            title: "Company Registration",
+            title: "Tax Administration",
             image: "tax_r.png",
-            description:
-                "End-to-end CIPC company incorporation, statutory amendments, and ongoing compliance advisory, tailored to your business objectives.",
+            items: ["Income Tax", "Employee Tax", "SARS Audits & Queries", "Tax Clearance Certificates", "Tax Directives", "VAT"],
             accent: "bg-[#FACC15]", // yellow
         },
         {
-            title: "Trust Registration",
+            title: "Registrations",
             image: "tax_r.png",
-            description:
-                "Professional trust formation, documentation, and regulatory guidance in accordance with South African legal requirements.",
+            items: ["CIDB & CSD", "Companies", "Income Tax", "NPO & PBO", "Trusts", "VAT"],
             accent: "bg-[#22C55E]", // green
         },
         {
-            title: "NPO & PBO Registration",
+            title: "Tax & Estate Planning",
             image: "tax_r.png",
-            description:
-                "Expert facilitation of non-profit organisation registration and continued support for statutory compliance and governance.",
+            items: ["Estate Structures", "Financial Structures", "Last will & testaments", "Tax Structures", "Trust Deeds"],
             accent: "bg-[#A855F7]", // purple
         },
         {
-            title: "Annual Financial Statements",
+            title: "Commercial Law",
             image: "tax_r.png",
-            description:
-                "Preparation of fully compliant annual financial statements and management reports, providing clarity for strategic decision-making.",
-            accent: "bg-[#F97316]", // orange
-        },
-        {
-            title: "Audits",
-            image: "tax_r.png",
-            description:
-                "Independent audit and review services conducted in strict alignment with applicable professional standards, ensuring integrity and transparency.",
-            accent: "bg-[#0EA5E9]", // sky
-        },
-        {
-            title: "SARS Queries",
-            image: "tax_r.png",
-            description:
-                "Efficient management of SARS assessments, verifications, objections, and all correspondence, safeguarding your interests at every stage.",
-            accent: "bg-[#EF4444]", // red
-        },
-        {
-            title: "Estate Duties",
-            image: "tax_r.png",
-            description:
-                "Comprehensive estate administration, including preparation of returns and precise duty calculations, delivered with sensitivity and expertise.",
-            accent: "bg-[#64748B]", // slate
+            items: ["Credit agreements", "Insurance", "Law of contracts", "Master of Court", "Personal Liabilities (CIPC)"],
+            accent: "bg-[#A855F7]", // purple
         },
     ];
     return (
@@ -97,9 +70,13 @@ export default function Services() {
                                         width={100}
                                     />
                                     <p className="text-2xl text-center font-space font-bold">{service.title}</p>
-                                    <p className={"text-lg max-sm:text-sm text-center"}>
-                                        {service.description}
-                                    </p>
+                                    <ul className={"text-lg max-sm:text-sm text-center"}>
+                                        {
+                                            service.items.map((item, key)=> (
+                                                <li key={index}>{item}</li>
+                                            ))
+                                        }
+                                    </ul>
                                 </div>
                             )
                         )
