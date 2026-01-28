@@ -4,83 +4,8 @@ import Link from "next/link";
 import {ArrowLeft, ArrowRight} from "lucide-react";
 import {useState} from "react";
 import {AnimatePresence, motion} from "motion/react";
+import {services} from "@/lib/services";
 
-const services = [
-    {
-        title: "Financial Accounting",
-        image: "tax_r.png",
-        subServices: [
-            "Annual Financial Statements",
-            "Monthly Accounting",
-        ],
-        accent: "bg-[#2563EB]",
-    },
-    {
-        title: "VAT Registration",
-        image: "tax_r.png",
-        subServices: [
-            "Mandatory VAT Registration",
-            "Voluntary VAT Registration",
-            "VAT Number Retrieval",
-            "VAT Category Change",
-            "VAT Deregistration"
-        ],
-        accent: "bg-[#2563EB]",
-    },
-    {
-        title: "PAYE Registration",
-        image: "tax_r.png",
-        subServices: [
-            "PAYE Registration with SARS",
-            "Employer PAYE Number Retrieval",
-            "PAYE Deregistration",
-            "PAYE Reactivation"
-        ],
-        accent: "bg-[#2563EB]",
-    },
-    {
-        title: "UIF Registration",
-        image: "tax_r.png",
-        subServices: [
-            "UIF Employer Registration",
-            "UIF Employee Registration",
-            "UIF Number Retrieval",
-            "UIF Deregistration"
-        ],
-        accent: "bg-[#2563EB]",
-    },
-    {
-        title: "SDL Registration",
-        image: "tax_r.png",
-        subServices: [
-            "SDL Employer Registration",
-            "SDL Number Retrieval",
-            "SDL Deregistration"
-        ],
-        accent: "bg-[#2563EB]",
-    },
-    {
-        title: "Provisional Tax Registration",
-        image: "tax_r.png",
-        subServices: [
-            "Provisional Tax Registration",
-            "IRP30 Confirmation",
-            "Provisional Tax Deregistration"
-        ],
-        accent: "bg-[#2563EB]",
-    },
-    {
-        title: "SARS eFiling Setup",
-        image: "tax_r.png",
-        subServices: [
-            "New eFiling Registration",
-            "eFiling Profile Setup",
-            "eFiling Password Recovery",
-            "Profile Linking & Maintenance"
-        ],
-        accent: "bg-[#2563EB]",
-    }
-];
 
 
 export function ServiceCard() {
@@ -116,7 +41,7 @@ export default function ServiceCardMotion() {
         setIndex((prev) => (prev - 1 + services.length) % services.length);
 
     return (
-        <div className="relative col-start-2 w-full h-full max-w-xl">
+        <div className="relative md:col-start-2 w-full h-full max-w-xl">
             <AnimatePresence mode="wait">
                 <motion.div
                     key={index}
@@ -134,12 +59,14 @@ export default function ServiceCardMotion() {
                     </h3>
 
                     <p className="mt-3 font-sans text-sm text-gray-600">
-                        {/*{service.description}*/}
+                        {
+                            service.items.map((item, key)=> (
+                                <span className="block " key={key}>{item}</span>
+                            ))
+                        }
                     </p>
 
-                    <button className="mt-6 font-medium text-[#0B0331]">
-                        Learn More
-                    </button>
+
 
                     {/* Arrows */}
                     <div className="mt-8 text-black flex items-center gap-6">

@@ -7,8 +7,8 @@ export default function About() {
             {/* Header */}
             <main className="flex text-white min-h-screen w-full  flex-col items-center  sm:items-start">
                 <section className="w-full relative  bg-[#0B0331] max-sm:py-[10%] flex flex-col items-center gap-y-10 py-[5%]">
-                    <div className="flex z-10 px-[15%] max-md:pt-20 w-full max-sm:px-[5%] flex-col  gap-y-2">
-                        <h1 className="text-6xl font-space max-md:text-4xl font-light">
+                    <div className="flex z-10 px-[15%] max-md:pt-22 w-full max-sm:px-[5%] flex-col  gap-y-2">
+                        <h1 className="text-6xl font-space max-md:text-2xl font-light">
                             Who we are
                         </h1>
                         <p className="text-xl font-light  max-md:text-sm">
@@ -16,30 +16,42 @@ export default function About() {
                         </p>
                     </div>
                 </section>
-                <section className={"bg-white gap-y-10 flex h-full flex-col text-[#0B0331] max-sm:px-[5%] px-[15%] py-[10%] w-full"}>
+                <section className={"bg-white font-sans gap-y-5 flex h-full flex-col text-[#0B0331] max-sm:px-[5%] px-[15%] py-[5%] w-full"}>
+                    <h3 className={"text-4xl max-sm:text-2xl font-semibold font-space"}>About Us</h3>
                     <div className="flex flex-col gap-y-5">
-                        <h3 className={"text-4xl max-sm:text-2xl font-semibold font-space"}>Our Mission</h3>
+                        <p className="list-disc font-sans max-sm:text-sm text-lg">
+                            Oxen Chartered Tax Advisors is here to change the entire story about accounting. Our drive is to transform tax from a daunting obligation into an understandable part of your journey.
+                            Through clear education and a fresh perspective, we're making smart finance approachable, and yes, fun for all.
+                            Let's change the narrative together.
+                        </p>
+                        <p className="max-sm:text-sm text-lg">
+                            We're a company with multi-disciplined  professionals providing various services in the field of accounting, taxation, estate planning, administration of deceased estates and associated legal services.
+                        </p>
+                        <p className="max-sm:text-sm text-lg">
+                            Our director and partner professionals consist of Chartered Accountants (SA), Professional Accountants (SA), Master Tax Practitioners (SA), and Legal Professionals (Advocate and Attorney).
+                        </p>
+                    </div>
+                </section>
+                <section className={"bg-white gap-y-10 gap-x-2 flex max-md:flex-col h-full  text-[#0B0331] max-sm:px-[5%] px-[15%] py-[1%_10%] w-full"}>
+                    <div className="flex flex-col gap-y-5">
+                        <h3 className={"text-4xl max-sm:text-xl font-semibold font-space"}>Our Mission</h3>
                         <p className="max-w-3xl max-sm:text-sm text-lg">
-                            To simplify accounting and tax compliance through clear guidance, fair pricing, and dependable support.
-                            We exist to remove confusion, reduce stress, and help individuals and businesses meet their obligations with confidence.
-                            Professional standards, delivered in a way that people can actually understand.
+                            To demystify tax and accounting by making it genuinely understandable and even enjoyable.
+                            We empower every client with clear knowledge and proactive strategies.
                         </p>
                     </div>
                     <div className="flex flex-col gap-y-5">
-                        <h3 className={"text-4xl max-sm:text-2xl  font-semibold font-space"}>Our Vision</h3>
+                        <h3 className={"text-4xl max-sm:text-xl  font-semibold font-space"}>Our Vision</h3>
                         <p className="max-w-3xl max-sm:text-sm text-lg">
-                            A future where accounting and tax compliance are not barriers to progress.
-                            Where individuals and businesses of all sizes have access to trusted advice and clear financial direction.
-                            Empowered people make stronger decisions and build stronger economies.
+                            A world where everyone approaches finance with confidence, not dread.
+                            We are changing the narrative of accounting from a complex obligation to an accessible tool for growth.
                         </p>
                     </div>
                     <div className="flex flex-col gap-y-5">
-                        <h3 className={"text-4xl max-sm:text-2xl font-semibold font-space"}>Our Goal</h3>
+                        <h3 className={"text-4xl max-sm:text-xl font-semibold font-space"}>Our Goal</h3>
                         <p className="max-w-3xl max-sm:text-sm text-lg">
-                            To make compliant, well-managed finances the norm, not the exception.
-                            We aim to support sustainable growth, protect our clients from unnecessary risk,
-                            and build long-term financial confidence.
-                            Simple systems. Clear advice. Lasting impact.
+                            To be the trusted guide that transforms your relationship with tax.
+                            We measure success by your clarity, confidence, and sense of control.
                         </p>
                     </div>
                 </section>

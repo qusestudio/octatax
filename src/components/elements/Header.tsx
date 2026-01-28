@@ -8,10 +8,10 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="w-full  max-sm:border-b z-30 top-0 text-white bg-[#0B0331] px-5 sm:px-10 md:px-20 lg:px-[15%] py-5 max-md:fixed ">
+        <header className="w-full backdrop-blur-2xl font-sans max-sm:border-b z-30 top-0 text-white bg-[#0B0331]/25 px-5 sm:px-10 md:px-20 lg:px-[15%] py-5 fixed ">
             <div className="flex justify-between items-center">
                 {/* Logo */}
-                <h1 className="font-bold text-2xl border-[#05001B] text-[#0B0331] border-4 rounded-xl p-4 bg-[#038EF0]">OCTA</h1>
+                <h1 className="font-bold text-2xl max-md:text-sm border-[#05001B] text-[#0B0331] border-4 rounded-xl p-4 bg-[#038EF0]">OCTA</h1>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex gap-x-5 text-sm">
@@ -33,7 +33,7 @@ export default function Header() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <nav className="flex flex-col gap-3 mt-4 md:hidden text-center">
+                <nav className="flex flex-col bg-[#0B0331] py-3 rounded-lg border gap-3 mt-4 md:hidden text-center">
                     <Link href="/" onClick={() => setIsOpen(false)}>Home</Link>
                     <Link href="/about" onClick={() => setIsOpen(false)}>About</Link>
                     <Link href="/services" onClick={() => setIsOpen(false)}>Services</Link>

@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function OurServicesPreview() {
     return (
         <section className="w-full max-sm:h-full px-[20%] max-sm:px-[5%]  bg-white h-screen flex gap-y-15 max-sm:gap-y-10  py-20 flex-col ">
-            <p className={"text-[#038EF0] font-bold"}>OUR SERVICES</p>
+            <p className={"text-[#038EF0] max-sm:text-sm font-bold"}>OUR SERVICES</p>
             <div className="flex max-sm:flex-col gap-y-5 justify-between w-full">
-                <h3 className="text-4xl max-sm:text-3xl font-bold text-[#0B0331]">
+                <h3 className="text-4xl max-sm:text-2xl font-bold text-[#0B0331]">
                     Innovative Solutions <br/>
                     for Modern Accounting.
                 </h3>
@@ -18,7 +18,7 @@ export default function OurServicesPreview() {
                         So your focus stays where it belongs. Building, providing, and moving forward.
                     </p>
                     <Link href={"/services"}
-                          className={"font-bold text-[#0B0331] bg-[#038EF0] rounded-full self-start p-2 px-5"}>Explore
+                          className={"font-bold text-[#0B0331] max-sm:text-sm bg-[#038EF0] rounded-full self-start p-2 px-5"}>Explore
                         All Services</Link>
                 </div>
             </div>

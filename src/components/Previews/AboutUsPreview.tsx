@@ -5,9 +5,9 @@ import Image from "next/image";
 export default function AboutUsPreview(){
     return (
         <section className="w-full px-[20%] max-sm:px-[5%] bg-[#DDF1FF] sm:h-screen max-sm:gap-y-5 flex gap-y-15  py-20 flex-col ">
-            <p className={"text-[#038EF0] font-bold"}>ABOUT US</p>
+            <p className={"text-[#038EF0] max-sm:text-sm font-bold"}>ABOUT US</p>
             <div className="flex max-sm:flex-col max-sm:gap-y-5 justify-between w-full">
-                <h3 className="text-4xl max-sm:text-3xl font-bold text-[#0B0331]">
+                <h3 className="text-4xl max-sm:text-2xl font-bold text-[#0B0331]">
                     Empowering Financial <br/>
                     Growth and Stability.
                 </h3>
@@ -17,7 +17,7 @@ export default function AboutUsPreview(){
                         At Oxen Chartered Tax Advisors, we’re here to make financial confidence feel simple, achievable, and personal.
                     </p>
                     <Link href={"#"}
-                          className={"font-bold text-[#0B0331] bg-[#038EF0] rounded-full self-start p-2 px-5"}>More
+                          className={"font-bold max-sm:text-sm text-[#0B0331] bg-[#038EF0] rounded-full self-start p-2 px-5"}>More
                         About Us</Link>
                 </div>
             </div>

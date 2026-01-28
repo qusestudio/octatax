@@ -78,20 +78,27 @@ export default function Contact() {
 
     return (
         <main className="bg-white  w-full text-white">
-            <section className="w-full relative  bg-[#0B0331] max-sm:py-[10%] flex flex-col items-center gap-y-10 py-[5%]">
-                <div className="flex z-10 px-[15%] max-md:pt-20 w-full max-sm:px-[5%] flex-col  gap-y-2">
-                    <h1 className="text-6xl font-space max-md:text-4xl font-light">
+            <section className="w-full md:py-[10%_5%] relative px-[15%] max-sm:px-[5%]  bg-[#0B0331] max-sm:py-[10%] flex max-md:flex-col  items-start gap-y-10 py-[5%]">
+                <div className="flex z-10  max-sm:pt-22  w-full  flex-col  gap-y-2">
+                    <h1 className="text-6xl font-space max-md:text-2xl font-light">
                         Get in touch
                     </h1>
-                    <p className="text-xl font-light  max-md:text-sm">
+                    <p className="text-xl font-light font-sans  max-md:text-sm">
                         We're here to help you set your business right.
+                    </p>
+                </div>
+                <div className="w-full md:text-right">
+                    <p className="font-space max-sm:text-sm">
+                        enquiries@octatax.co.za <br />
+                        021 003 9100 <br />
+                        21 Dreyer Street, Claremont, Cape Town, 7708
                     </p>
                 </div>
             </section>
             {/* Contact Form */}
             <section
                 className="w-full flex  justify-center">
-                <div className="grid gap-y-5 px-[15%] gap-x-[10%] max-sm:px-[5%] py-[10%] max-sm:grid-cols-1 md:grid-cols-2">
+                <div className="grid font-sans gap-y-5 px-[15%] gap-x-[10%] max-sm:px-[5%] py-[10%] max-sm:grid-cols-1 md:grid-cols-2">
                     <div className="text-black flex flex-col gap-y-1 text-xl">
                         <h2 className="text-6xl max-md:text-5xl max-sm:text-4xl font-space tracking-tight">
                             Contact Us.
@@ -126,7 +133,7 @@ export default function Contact() {
                                 value={fullName}
                                 onChange={e => setFullName(e.target.value)}
                                 placeholder="Name"
-                                className="p-4 py-6  rounded-xl text-black border border-black placeholder:text-black/40 backdrop-blur-2xl  bg-[#D4C5A8]/5"
+                                className="p-4 py-6 max-sm:py-3 max-sm:text-sm rounded-xl max-sm:rounded-md text-black border border-black placeholder:text-black/40 backdrop-blur-2xl  bg-[#D4C5A8]/5"
                             />
                             <input
                                 type="email"
@@ -135,14 +142,8 @@ export default function Contact() {
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
                                 placeholder="Email"
-                                className="p-4 py-6 text-black border rounded-xl border-black placeholder:text-black/40 backdrop-blur-2xl bg-[#D4C5A8]/5"/>
-
-                            {/*<CustomSelect*/}
-                            {/*    options={options}*/}
-                            {/*    value={selectedValue}*/}
-                            {/*    onChange={setSelectedValue}*/}
-                            {/*    placeholder="Please select a project investment range"*/}
-                            {/*/>*/}
+                                className="p-4 py-6 max-sm:py-3 max-sm:text-sm text-black max-sm:rounded-md border rounded-xl border-black placeholder:text-black/40 backdrop-blur-2xl bg-[#D4C5A8]/5"
+                            />
 
                             <textarea
                                 id="message"
@@ -151,13 +152,13 @@ export default function Contact() {
                                 value={message}
                                 onChange={e => setMessage(e.target.value)}
                                 placeholder="How can we help?"
-                                className="p-4 max-sm:text-lg text-black border rounded-xl border-black placeholder:text-black/40 backdrop-blur-2xl  bg-[#D4C5A8]/5"/>
+                                className="p-4 max-sm:py-3 max-sm:text-sm max-sm:rounded-md text-black border rounded-xl border-black placeholder:text-black/40 backdrop-blur-2xl  bg-[#D4C5A8]/5"/>
 
                             <button disabled={loading}
                                     className="bg-[#0B0331] max-sm:text-sm rounded-xs text-white p-3 text-lg font-medium">
                                 {loading ? 'Sending Message...' : 'Submit'}
                             </button>
-                            <p className="text-black">
+                            <p className="text-black max-sm:text-sm max-sm:text-center">
                                 By clicking “Submit” you agree to {" our "}
                                 <Link href="#" target="_blank" className="underline">TOS</Link>
                                 {' and '}
@@ -167,19 +168,6 @@ export default function Contact() {
 
                     </div>
                 </div>
-                {/*<div className="grid uppercase max-md:grid-cols-1 gap-5 md:col-start-2 grid-cols-3">*/}
-                {/*    <Link href="https://www.linkedin.com/company/qvsestudio" target="_blank"*/}
-                {/*          className="border flex items-center justify-between bg-[#D4C5A8]/5 gap-5  border-[#D4C5A8]/20 p-5">*/}
-                {/*        <span className="flex gap-4"><Linkedin/> Linkedin</span> <ArrowRight/> </Link>*/}
-
-                {/*    <Link href="https://www.instagram.com/qvsestudio/" target="_blank"*/}
-                {/*          className="border flex items-center justify-between bg-[#D4C5A8]/5 gap-5  border-[#D4C5A8]/20 p-5">*/}
-                {/*        <span className="flex gap-4"><Instagram/> Instagram </span> <ArrowRight/> </Link>*/}
-                {/*    <Link href="mailto:hello@qvse.co.za" target="_blank"*/}
-                {/*          className="border flex items-center justify-between bg-[#D4C5A8]/5 gap-5  border-[#D4C5A8]/20 p-5">*/}
-                {/*        <span className="flex gap-4"><Mail /> email </span> <ArrowRight/> </Link>*/}
-                {/*</div>*/}
-
             </section>
         </main>
     )

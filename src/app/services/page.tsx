@@ -49,7 +49,7 @@ export default function Services() {
             <main className="flex text-white w-full  flex-col items-center  sm:items-start">
                 <section className="w-full relative  bg-[#0B0331]  flex flex-col items-center max-sm:py-[10%] gap-y-10 py-[5%]">
                     <div className="flex z-10 px-[15%] max-md:pt-20 w-full max-sm:px-[5%] flex-col  gap-y-2">
-                        <h1 className="text-6xl font-space max-md:text-3xl font-light">
+                        <h1 className="text-6xl font-space max-md:text-2xl font-light">
                             OCTA at your service
                         </h1>
                         <p className="text-xl font-light  max-md:text-sm">
@@ -69,14 +69,14 @@ export default function Services() {
                                         height={100}
                                         width={100}
                                     />
-                                    <p className="text-2xl text-center font-space font-bold">{service.title}</p>
-                                    <ul className={"text-lg max-sm:text-sm text-center"}>
+                                    <p className="text-2xl max-sm:text-xl text-center font-space font-bold">{service.title}</p>
+                                    <div className={"text-lg max-sm:text-sm text-center"}>
                                         {
                                             service.items.map((item, key)=> (
-                                                <li key={index}>{item}</li>
+                                                <p className="list-decimal underline" key={key}>{item}</p>
                                             ))
                                         }
-                                    </ul>
+                                    </div>
                                 </div>
                             )
                         )
