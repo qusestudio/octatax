@@ -47,7 +47,7 @@ export default function Services() {
         <div className="flex flex-col min-h-screen items-center justify-center  font-sans">
             {/* Header */}
             <main className="flex text-white w-full  flex-col items-center  sm:items-start">
-                <section className="w-full relative  bg-[#0B0331]  flex flex-col items-center max-sm:py-[10%] gap-y-10 py-[5%]">
+                <section className="w-full relative md:py-[10%_5%] bg-[#0B0331]  flex flex-col items-center max-sm:py-[10%] gap-y-10 py-[5%]">
                     <div className="flex z-10 px-[15%] max-md:pt-20 w-full max-sm:px-[5%] flex-col  gap-y-2">
                         <h1 className="text-6xl font-space max-md:text-2xl font-light">
                             OCTA at your service

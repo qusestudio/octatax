@@ -5,8 +5,8 @@ export default function About() {
     return (
         <div className="flex flex-col  min-h-screen items-center justify-center  font-sans">
             {/* Header */}
-            <main className="flex text-white min-h-screen w-full  flex-col items-center  sm:items-start">
-                <section className="w-full relative  bg-[#0B0331] max-sm:py-[10%] flex flex-col items-center gap-y-10 py-[5%]">
+            <main className="flex text-white  min-h-screen w-full  flex-col items-center  sm:items-start">
+                <section className="w-full relative md:py-[10%_5%] bg-[#0B0331] max-sm:py-[10%] flex flex-col items-center gap-y-10 py-[5%]">
                     <div className="flex z-10 px-[15%] max-md:pt-22 w-full max-sm:px-[5%] flex-col  gap-y-2">
                         <h1 className="text-6xl font-space max-md:text-2xl font-light">
                             Who we are

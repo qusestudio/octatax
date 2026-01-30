@@ -78,7 +78,7 @@ export default function AskAkwande() {
 
     return (
         <main className="bg-white  w-full text-white">
-            <section className="w-full relative  bg-[#0B0331]  flex flex-col items-center gap-y-10 max-sm:py-[10%] py-[5%]">
+            <section className="w-full relative md:py-[10%_5%]  bg-[#0B0331]  flex flex-col items-center gap-y-10 max-sm:py-[10%] py-[5%]">
                 <div className="flex z-10 px-[15%] max-md:pt-20 w-full max-sm:px-[5%] flex-col  gap-y-2">
                     <h1 className="text-6xl font-space max-md:text-3xl font-light">
                         Talk to Akwande
